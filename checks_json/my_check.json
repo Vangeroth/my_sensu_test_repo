@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "vangeroth": {
+  "type" : "metric",
+  "handlers" : ["graphite_event"],
+      "command": "my_check.py",
+      "interval": 20,
+      "refresh" : 20,
+      "subscribers": [
+        "test"
+      ],
+  "standalone" : true
+    }
+  }
+}
